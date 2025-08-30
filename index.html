@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InBarber | Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="anonymous-mode">
+                <span class="icon">👤</span>
+                <span class="text">ANONYMOUS MODE ENABLED</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Chat Interface -->
+    <main class="chat-container">
+        <div id="chat-area" class="chat-area">
+            <!-- Initial bot messages -->
+            <div class="chat-message bot">
+                Hello, how are you? I am the virtual assistant of Barbearia Alan Coelho and I handle the scheduling of services for their professionals, okay?
+            </div>
+            <div class="chat-message bot">
+                What is your name? Please write your first and last name.
+            </div>
+        </div>
+        
+        <!-- Chat Input Section -->
+        <div class="chat-input-container">
+            <input 
+                type="text" 
+                id="message-input" 
+                class="message-input"
+                placeholder="Your first and last name" 
+                aria-label="Chat message input"
+            />
+            <button id="send-button" class="send-button">Send</button>
+        </div>
+    </main>
+
+    <!-- Fallback Message for No JavaScript -->
+    <noscript>
+        <div class="noscript-message">
+            <p>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</p>
+        </div>
+    </noscript>
+
+    <!-- Script to handle UI interactions -->
+    <script src="js/script.js"></script>
+</body>
+</html>
